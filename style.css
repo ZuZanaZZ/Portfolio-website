@@ -62,14 +62,6 @@ h1{
     text-align: center;
 }
 
-/*dividers*/
-.divider{
-    margin: 1em;
-    height:2em;
-    background-image: url(border-dark.png);
-    background-repeat: repeat-x;
-}
-
 /*circles*/
 .avatar-circle{
     background-color: #ffb4e5;
@@ -136,6 +128,13 @@ h1{
     border-radius: 50%;
 }
 
+/*icons*/
+.icon:hover {
+    background-color: #ffb4e5;
+    transition: background-color 0.2s;
+    border-radius: 50%;
+}
+
 /*upper part*/  
 .half {
     width: 50%;
@@ -153,7 +152,6 @@ h1{
 
 .upper--part__picture{
     width: 25em;
-
 }
 
 .flex-reverse{
@@ -163,12 +161,12 @@ h1{
     align-items: flex-end;
 }
 
-/*biography*/
-.biography{
+/*about me*/
+.about-me{
     display: flex;
     z-index: 1;
 }
-.biography-picture{
+.about-me-picture{
     width: 10em;
     justify-self: center;
 }
@@ -179,7 +177,7 @@ h1{
     flex-direction: column;
 }
 
-/*what do i do*/
+/*hobbies*/
 .flex {
     display: flex;
     gap: 1em;
@@ -187,39 +185,22 @@ h1{
 }
 
 .flex-card {
+    width: 95%;
     border-radius: 1em;
     padding: 1em;
     margin: 1em;
 }
-.what-do-i-do-picture{
+.hobbies-picture{
     height: 5em;
 }
 
-/*awards*/
-.awards{
-    justify-content: space-between;
-    display: flex;
-    flex-grow: 1;
-}
-
-.awards-card{
-    display: flex;
-    border-radius: 1em;
-    padding: 1em;
-    margin: 1em;
-}
-
-.awards-card-picture{
-    height: 5em;
-}
-
-/*my experience*/
+/*education*/
 .dividing-line{
     border-right: 1px solid #ffb4e5;
 }
 
 .divider-width{
-    width: 50em;
+    width: 10em;
 }
 
 .flex-vertical{
@@ -278,7 +259,7 @@ h1{
     display: grid;
     gap: 1em;
 }
- 
+
 .subject, .comment {
     grid-column: span 2;
 }
@@ -290,13 +271,13 @@ input, textarea, button {
     flex-grow: 1;
     border: 2px solid #ffb4e5;
     border-radius: 0.5em;
- }
+}
 
- button:active{
+button:active{
     background-color: #ffb4e5;
     border: 2px solid white;
     border-radius: 0.5em;
- }
+}
 
 input, button, textarea {
     outline-color: #ffb2ec;
@@ -304,9 +285,9 @@ input, button, textarea {
 
 button{
     width: 50%;
- }
+}
 
- address{
+address{
     font-style: normal;
 }
 
@@ -325,7 +306,7 @@ button{
     margin-left: auto;
 }
 
-/*breakpoints*/ /*1200, 960, 560, 360*/
+/*breakpoints: 1200, 960, 560, 360*/
 /*extra big*/
 @media (min-width: 1200px){ 
     .underline:hover{
@@ -336,12 +317,6 @@ button{
     .card-circle::before{
         top: -3.5em;
         right: 11em;
-    }
-
-    .awards-card{
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
     }
 
     .navigation{
@@ -363,12 +338,6 @@ button{
     .card-circle::before{
         top: -3.5em;
         right: 9.5em;
-    }
-
-    .awards-card{
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
     }
 
     .navigation{
@@ -403,7 +372,7 @@ button{
         display: none;
     }
 
-    .biography{
+    .about-me{
         flex-direction: column;
     }
 
@@ -416,7 +385,7 @@ button{
         display: contents;
     }
 
-    .experience-card{
+    .education-card{
         flex-direction: row;
     }
 
@@ -461,21 +430,7 @@ button{
         display: grid;
     }
 
-    .awards{
-        flex-direction: column;
-    }
-
-    .awards-card{
-        flex-direction: row;
-        text-align: left;
-        width: auto;
-    }
-
-    .awards-card-picture{
-        padding-right: 1em;
-    }
-
-    .experience-card{
+    .education-card{
         flex-direction: column;
     }
     

@@ -19,10 +19,9 @@
                 <p>Hello, my name is</p>
                 <h1>Bc. Zuzana Žemličková</h1>
                 <span class="big-text coloured-text thick-text">Computer science graduate</span>
-                <div><p>This is my personal website. Here I showcase some of my projects and interests!</p></div>
-                <!-- Github, Linked in, daj to do nejakeho divu? a aby ta to presmerovalo na tie stranky. pri hover to bude ruzove-->
-                <img src="assets/github-logo.svg" alt="github logo" class="small-img">
-                <img src="assets/linkedin-logo.svg" alt="linkedin logo" class="small-img">
+                <div><p>Welcome to my personal website! Here I showcase some of my projects and interests.</p></div>
+                <a href="https://github.com/ZuZanaZZ"><img src="assets/github-logo.svg" alt="github logo" class="icon small-img"></a>
+                <a href="https://www.linkedin.com/in/zuzana-žemličková/"><img src="assets/linkedin-logo.svg" alt="linkedin logo" class="icon small-img"></a>
             </div>
             <div class="big-circle flex-reverse half display-none"><img src="assets/myAvatar.svg" alt="profile picture" class="upper--part__picture"></div>
         </header>
@@ -31,9 +30,9 @@
     <main>
         <div class="background-color--primary">
             <div class="section-width">
-                <section class="biography">
+                <section class="about-me">
                         <figure class="vertical-align">
-                            <img src="assets/myAvatar.svg" alt="profile picture" class="biography-picture avatar-circle">
+                            <img src="assets/myAvatar.svg" alt="profile picture" class="about-me-picture avatar-circle">
                             <figcaption class="vertical-align">
                                 <span class="padded-text text-center thick-text big-text">Bc. Zuzana Žemličková</span>
                                 <span class="padded-text text-center">Computer science graduate</span>
@@ -43,10 +42,8 @@
                         <h2 class="title">About me</h2>
                         <p class="padded-text-horizontal">Recently graduated with a Bachelor of Computer Science, where I found interest in both the theoretical aspects of this field, like learning about automata, and the practical part of making the theory come to life through coding, which I did by developing a game around automata in Python for my thesis.</p>
                         <p class="padded-text-horizontal">Through my studies I've experienced and played around with some of the following:
-                        Languages: 
-                        - Common Lisp, Python, C#, C, SQL, HTML, CSS & Assembly
-                        Technologies: 
-                        - PostgreSQL, .NET & Pygame</p>
+                            Languages: Python, C#, C, SQL, Common Lisp, Assembly, HTML, CSS.
+                            Technologies: .NET, Pygame, PostgreSQL.</p>
                         <p class="padded-text-horizontal">When my creativity isn't applied to Computer Science, I spend my creativity on various crafts and arts in my spare time, such as painting, knitting, crocheting, cooking/baking & music. Other hobbies include social activities, working out & caring for my plants.</p>
                         <p class="padded-text-horizontal">Throughout my life I've travelled a decent amount, participated in online communities and met people internationally. Making social connections across cultural, ethnic, international, religious and other kind of differences has taught me a lot, and I hope I can continue this journey, to get to know more people, and expand my interpersonal skills further!</p>
                         <p class="padded-text-horizontal">Born in Slovakia, studied in Czech Republic and am now aiming for settling down in Denmark, where I've made several friends and found a partner.</p>
@@ -61,52 +58,62 @@
                 <div class="grid">
                     <article class="grid-card">
                         <img class="grid-card--img" src="https://picsum.photos/id/200/640/360" alt="placeholder">
-                        <span><time datetime="2020-12-07">07/12/2020</time></span>
                         <h3 class="grid-card__title">Automatontron</h3>
-                            <p class="grid-card__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In rutrum. Quisque porta. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <p class="grid-card__text">Automatontron is a logic game inspired by the Human Resource Machine game. 
+                                In Automatontron, the player is tasked with constructing an automaton, that recognises the language of the given level, and this progressing in the game.</p>
+                    </article>
+                    <article class="grid-card">
+                        <img class="grid-card--img" src="https://picsum.photos/id/206/640/360" alt="placeholder">
+                        <h3 class="grid-card__title">.NET to do web app (coming soon)</h3>
+                            <p class="grid-card__text">Web app that is built with ASP.NET. It has simple database. 
+                                You can have multiple to do lists and add and delete the actual tasks inside of them. 
+                                The web app has also a search functionality.</p>
+                    </article>
+                                        <article class="grid-card">
+                        <img class="grid-card--img" src="https://picsum.photos/id/220/640/360" alt="placeholder">
+                        <h3 class="grid-card__title">COBOL system for logging items (coming soon)</h3>
+                            <p class="grid-card__text">Here you can log items. And then unlog them! :D</p>
                     </article>
                 </div>
         </section>
 
         <section class="section-width">
             <h2 class="title" style="display: block;">Education</h2>
-                <article class="experience-card flex-card background-color--primary flex">
+                <article class="education-card flex-card background-color--primary flex">
                     <div class="flex-vertical dividing-line divider-width">
-                        <span><time datetime="2021-02">Feb 2021</time> - <time datetime="2023">Present</time></span>
-                        <span class="little-box--primary box-width-normal">Full Time</span>
+                        <span><time datetime="2022">2022</time> - <time datetime="2025">2025</time></span>
                     </div>
                     <div>
                         <h3>Palacký university Olomouc</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean placerat. Praesent dapibus. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Computer Science degree with a specialisation in programming and software development. </p>
                     </div>
                 </article>
-                <article class="experience-card flex-card background-color--primary flex">
+                <article class="education-card flex-card background-color--primary flex">
                     <div class="flex-vertical dividing-line divider-width">
-                        <span><time datetime="2020-03">Mar 2020</time> - <time datetime="2023">Present</time></span>
-                        <span class="little-box--secondary box-width-normal">Part Time</span>
+                        <span><time datetime="2016">2016</time> - <time datetime="2021">2021</time></span>
                     </div>
                     <div>
-                        <h3>Bilingual business academy</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean placerat. Praesent dapibus. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h3>Bilingual business academy EDUCO</h3>
+                        <p>Business high school with a specialisation in English and accounting.</p>
                     </div>
                 </article>
                 <section>
                     <h2 class="flex-title title">Hobbies</h2>
                         <div class="flex">
                             <article class="flex-card background-color--secondary overflow-stopper card-circle">
-                                <img src="assets/pencil-alt-solid.svg" alt="pencil picture" class="what-do-i-do-picture">
+                                <img src="assets/pencil-alt-solid.svg" alt="pencil picture" class="hobbies-picture">
                                 <h3 class="flex-card__title">Knitting</h3>
-                                    <p class="flex-card__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In rutrum. Quisque porta. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    <p class="flex-card__text">In my free time I knit various projects ranging from sweathers to socks. I enjoy colourful yarn and warm cup of coffee while knitting!</p>
                             </article>
                             <article class="flex-card background-color--secondary overflow-stopper card-circle">
-                                <img src="assets/desktop-solid.svg" alt="pc monitor picture" class="what-do-i-do-picture">
+                                <img src="assets/desktop-solid.svg" alt="pc monitor picture" class="hobbies-picture">
                                 <h3 class="flex-card__title">Baking</h3>
-                                    <p class="flex-card__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In rutrum. Quisque porta. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    <p class="flex-card__text">I like baking fresh sourdough bread! I keep my own sourdough starter and feed it diligently.</p>
                             </article>
                             <article class="flex-card background-color--secondary overflow-stopper card-circle">
-                                <img src="assets/bullseye-solid.svg" alt="bullseye picture" class="what-do-i-do-picture">
+                                <img src="assets/bullseye-solid.svg" alt="bullseye picture" class="hobbies-picture">
                                 <h3 class="flex-card__title">Painting</h3>
-                                    <p class="flex-card__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In rutrum. Quisque porta. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    <p class="flex-card__text">Graphic design is my passion. I really like drawing and painting particularly with watercolors.</p>
                             </article>
                         </div>
                 </section>
@@ -123,15 +130,15 @@
                             <p>If you'd like to contact me, you can do it here:</p>
                             <div class="flex--no-padding">
                                 <img src="assets/envelope-regular.svg" alt="envelope picture" class="small-img">
-                                <address class="padded-text-vertical thick-text">support@mail.com</address>
+                                <address class="padded-text-vertical thick-text">zuzanazemlicka@gmail.com</address>
                             </div>
                             <div class="flex--no-padding">
                                 <img src="assets/mobile-alt-solid.svg" alt="mobile picture" class="small-img">
-                                <address class="padded-text-vertical thick-text">123-456-789</address>
+                                <address class="padded-text-vertical thick-text">+45 93 87 98 65</address>
                             </div>
                     </div>
                     <div class="half display-contents">        
-                        <h3>Say Something</h3>
+                        <h3>Send a mesage!</h3>
                             <form class="form">
                                 <div class="form__input grid-card-form full-name test">
                                     <input type="text" id="full-name" placeholder="Full name">
@@ -155,10 +162,10 @@
     <footer class="section-width footer">
         <div class="flex">
             <div>
-                <img src="assets/github-logo.svg" alt="github logo" class="small-img">
-                <img src="assets/linkedin-logo.svg" alt="linkedin logo" class="small-img">
+                <a href="https://github.com/ZuZanaZZ"><img src="assets/github-logo.svg" alt="github logo" class="icon small-img"></a>
+                <a href="https://www.linkedin.com/in/zuzana-žemličková/"><img src="assets/linkedin-logo.svg" alt="linkedin logo" class="icon small-img"></a>
             </div>
-            <span class="padded-text-vertical push">&#169; Lorem ipsum dolor sit amet</span>
+            <span class="padded-text-vertical push">&#169; 2025</span>
         </div>
     </footer>
 </body>
