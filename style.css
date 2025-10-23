@@ -25,7 +25,7 @@ h {
     color: #0b0b15;
     font-weight: 900;
 }
-p, a, address, span {
+p, a, address, span, li {
     color: #555555;
 }
 
@@ -60,6 +60,11 @@ h1{
 
 .text-center{
     text-align: center;
+}
+
+/*lists*/
+ul {
+    list-style: none;
 }
 
 /*circles*/
