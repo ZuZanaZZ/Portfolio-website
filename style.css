@@ -1,10 +1,19 @@
+/*colors*/
+:root {
+    --background-color--primary: #f6f5f6;
+    --background-color--secondary: white;
+    --accent-color--primary: #ffb4e5;
+    --text-color--title: #0b0b15;
+    --text-color--text: #4e4e4e;
+}
+
 /*site*/
 .background-color--primary {
-    background-color: #e8e8e8;
+    background-color: var(--background-color--secondary);
 }
 
 .background-color--secondary{
-    background-color: white;
+    background-color: var(--background-color--primary);
 } 
 
 .section-width{
@@ -22,15 +31,15 @@ body, textarea {
 
 /*font*/
 h {
-    color: #0b0b15;
+    color: var(--text-color--title);
     font-weight: 900;
 }
 p, a, address, span, li {
-    color: #555555;
+    color: var(--text-color--text);
 }
 
 h1{
-    font-size: 6em;
+    font-size: 4em;
     margin: 0;
 }
 
@@ -50,10 +59,6 @@ h1{
     font-size: 0.9em;
 }
 
-.coloured-text{
-    color: #ffb4e5 ;
-}
-
 .thick-text{
     font-weight: 900;
 }
@@ -65,11 +70,21 @@ h1{
 /*lists*/
 ul {
     list-style: none;
+    margin: 0;
+}
+
+.list-title{
+    position: relative;
+    font-weight: 400;
+    font-size: medium;
+    padding-left: 1em;
+    margin: 0;
+    color: var(--text-color--text);
 }
 
 /*circles*/
 .avatar-circle{
-    background-color: #ffb4e5;
+    background-color: var(--accent-color--primary);
     border-radius: 50%;
 }
 
@@ -80,7 +95,7 @@ ul {
 
 .big-circle::before{
     content: "";
-    background-color: #ffb4e5;
+    background-color: var(--accent-color--primary);
     width: 80em;
     height: 80em;
     display: inline-block;
@@ -103,39 +118,40 @@ ul {
 
 .card-circle::before{
     content: "";
-    background-color: #ffb4e5;
+    background-color: var(--accent-color--primary);
     width: 11em;
     height: 11em;
     display: inline-block;
     position: absolute;
     z-index: -1;
-
+    left: -2em;
     border-radius: 50%; 
 }
 
+/*titles*/
 .title{
-    position:relative;
+    position: relative;
     z-index: 1;
-    padding: 1em;
+    padding: 1em 1em 0 1em;
     margin: 0;
 }
 
 .title::before{
     content: "";
-    background-color: #ffb4e5;
+    background-color: var(--accent-color--primary);
     width: 2em;
     height: 2em;
     display: inline-block;
     position: absolute;
     z-index: -1;
-    bottom: 1em;
+    bottom: 0.1em;
     left: 0.5em;
     border-radius: 50%;
 }
 
 /*icons*/
 .icon:hover {
-    background-color: #ffb4e5;
+    background-color: var(--accent-color--primary);
     transition: background-color 0.2s;
     border-radius: 50%;
 }
@@ -149,14 +165,11 @@ ul {
     width: auto;
     display: block;
 }
-.navigation {
-    list-style-type: none;
-    justify-content: space-between;
-    padding: 0em;
-}
 
 .upper--part__picture{
     width: 25em;
+    position: absolute;
+    top: 3em;
 }
 
 .flex-reverse{
@@ -182,26 +195,28 @@ ul {
     flex-direction: column;
 }
 
-/*hobbies*/
-.flex {
-    display: flex;
+/*my portfolio*/
+.grid{
+    display: grid;
+    margin: 1em;
     gap: 1em;
-    padding: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(319px, 1fr));
 }
 
-.flex-card {
-    width: 95%;
-    border-radius: 1em;
+.grid-card{
     padding: 1em;
-    margin: 1em;
+    border-radius: 1em;
 }
-.hobbies-picture{
-    height: 5em;
+
+.grid-card--img{
+    width: 100%;
+    border-radius: 1em;
+    height: auto;
 }
 
 /*education*/
 .dividing-line{
-    border-right: 1px solid #ffb4e5;
+    border-right: 1px solid var(--accent-color--primary);
 }
 
 .divider-width{
@@ -214,44 +229,31 @@ ul {
     justify-content: center;
 }
 
-.little-box--primary{
-    padding: 0.5em;
-    background-color: #ffb4e5;
-    border-radius: 0.5em;
-    text-align: center;
-}
-
-.little-box--secondary{
-    padding: 0.5em;
-    background-color: #a0a0a0;
-    border-radius: 0.5em;
-    text-align: center;
-}
-
 .box-width-normal{
     width: 5em;
 }
 
-/*my portfolio*/
-.grid {
-    display: grid;
+/*hobbies*/
+.flex{
+    display: flex;
     gap: 1em;
-    grid-template-columns: repeat(auto-fill, minmax(319px, 1fr));
-}
-
-.grid-card {
     padding: 1em;
 }
 
-.grid-card--img {
-    width: 100%;
-    height: auto;
+.flex-card{
+    border-radius: 1em;
+    padding: 1em;
+    flex: 1;
+}
+.hobbies-picture{
+    height: 5em;
 }
 
 /*contact*/
 .flex--no-padding{
     display: flex;
 }
+
 .small-img{
     height: 2em;
     margin-top: 0.5em;
@@ -274,18 +276,18 @@ input, textarea, button {
     width: 100%;
     box-sizing: border-box;
     flex-grow: 1;
-    border: 2px solid #ffb4e5;
+    border: 2px solid var(--accent-color--primary);
     border-radius: 0.5em;
 }
 
 button:active{
-    background-color: #ffb4e5;
+    background-color: var(--accent-color--primary);
     border: 2px solid white;
     border-radius: 0.5em;
 }
 
 input, button, textarea {
-    outline-color: #ffb2ec;
+    outline-color: var(--accent-color--primary);
 }
 
 button{
@@ -294,12 +296,6 @@ button{
 
 address{
     font-style: normal;
-}
-
-.map{
-    filter: grayscale(100%);
-    width: 100%;
-    height: 20em;
 }
 
 /*footer*/
@@ -314,18 +310,9 @@ address{
 /*breakpoints: 1200, 960, 560, 360*/
 /*extra big*/
 @media (min-width: 1200px){ 
-    .underline:hover{
-        text-decoration: underline #ffb4e5 3px;
-        text-underline-position: under;
-    }
-
     .card-circle::before{
         top: -3.5em;
         right: 11em;
-    }
-
-    .navigation{
-        display: flex;
     }
 
     .box-width-auto{
@@ -335,18 +322,9 @@ address{
 
 /*big*/
 @media (max-width: 1199px){
-    .underline:hover{
-        text-decoration: underline #ffb4e5 3px;
-        text-underline-position: under;
-    }
-
     .card-circle::before{
         top: -3.5em;
         right: 9.5em;
-    }
-
-    .navigation{
-        display: flex;
     }
 
     .box-width-auto{
@@ -362,15 +340,6 @@ address{
 
     .box-width-auto{
         display: contents;
-    }
-
-    .underline:hover{
-        text-decoration: underline #ffb4e5 3px;
-        text-underline-position: under;
-    }
-
-    .navigation{
-        display: flex;
     }
 
     .display-none{
@@ -404,31 +373,6 @@ address{
     h1{
         font-size: 4.5em;
         margin: 0;
-    }
-
-    .underline:hover{
-        text-decoration: underline #ffdaf2 3px;
-        text-underline-position: under;
-    }
-
-    .little-box--color-change:not(:hover){
-        padding: 0.5em;
-        background-color: #ffb4e5;
-        border-radius: 0.5em;
-        text-align: center;
-    }
-
-    .little-box--color-change:hover{
-        padding: 0.5em;
-        background-color: #ffdaf2;
-        border-radius: 0.5em;
-        text-align: center;
-    }
-
-    .navigation{
-        display: grid;
-        gap: 1em;
-        grid-template-columns: repeat(3, 1fr);
     }
 
     .box-width-auto{
