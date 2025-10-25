@@ -3,6 +3,7 @@
     --background-color--primary: #f6f5f6;
     --background-color--secondary: white;
     --accent-color--primary: #ffb4e5;
+    --accent-color--secondary: #dedbde;
     --text-color--title: #0b0b15;
     --text-color--text: #4e4e4e;
 }
@@ -21,7 +22,7 @@
     margin: auto;
 }
 
-body, textarea {
+body, textarea{
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     font-weight: 400;
@@ -29,12 +30,23 @@ body, textarea {
     padding: 0;
 }
 
+.big-img{
+    border-radius: 1em;
+    margin-left: 3em;
+}
+
+.medium-img{
+    border-radius: 1em;
+    margin-left: 3em;
+}
+
 /*font*/
 h {
     color: var(--text-color--title);
     font-weight: 900;
 }
-p, a, address, span, li {
+
+p, a, address, span, li{
     color: var(--text-color--text);
 }
 
@@ -48,7 +60,7 @@ h1{
 }
 
 .padded-text-horizontal{
-    padding: 0 1em;
+    padding: 0 2em;
 }
 
 .big-text{
@@ -68,16 +80,20 @@ h1{
 }
 
 /*lists*/
-ul {
-    list-style: none;
+ul{
     margin: 0;
+}
+
+li{
+    list-style: none;
+    padding-left: 2em;
 }
 
 .list-title{
     position: relative;
     font-weight: 400;
     font-size: medium;
-    padding-left: 1em;
+    padding-left: 2em;
     margin: 0;
     color: var(--text-color--text);
 }
@@ -150,7 +166,13 @@ ul {
 }
 
 /*icons*/
-.icon:hover {
+.icon:hover{
+    background-color: var(--accent-color--secondary);
+    transition: background-color 0.2s;
+    border-radius: 50%;
+}
+
+.icon:active{
     background-color: var(--accent-color--primary);
     transition: background-color 0.2s;
     border-radius: 50%;
@@ -206,12 +228,29 @@ ul {
 .grid-card{
     padding: 1em;
     border-radius: 1em;
+    position: relative;
+}
+
+.grid-card:hover{
+    background-color: var(--accent-color--secondary);
+}
+
+.grid-card:active{
+    background-color: var(--accent-color--primary);
 }
 
 .grid-card--img{
     width: 100%;
     border-radius: 1em;
     height: auto;
+}
+
+.grid-card--link{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 /*education*/
@@ -260,38 +299,6 @@ ul {
     margin-bottom: 0.5em;
     margin-right: 0.5em;
     width: 2em;
-}
-
-.form {
-    display: grid;
-    gap: 1em;
-}
-
-.subject, .comment {
-    grid-column: span 2;
-}
-
-input, textarea, button {
-    padding: 1em;
-    width: 100%;
-    box-sizing: border-box;
-    flex-grow: 1;
-    border: 2px solid var(--accent-color--primary);
-    border-radius: 0.5em;
-}
-
-button:active{
-    background-color: var(--accent-color--primary);
-    border: 2px solid white;
-    border-radius: 0.5em;
-}
-
-input, button, textarea {
-    outline-color: var(--accent-color--primary);
-}
-
-button{
-    width: 50%;
 }
 
 address{
@@ -366,6 +373,16 @@ address{
     .footer{
         flex-direction: row;
     }
+
+    .big-img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .medium-img{
+        width: 40%;
+        height: 40%;
+    }
 }
 
 /*small*/
@@ -389,11 +406,6 @@ address{
 
     .push{
         display: contents;
-    }
-
-    .form{
-        display: flex;
-        flex-direction: column;
     }
 
     .footer{

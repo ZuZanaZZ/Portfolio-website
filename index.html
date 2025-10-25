@@ -8,63 +8,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://picsum.photos/seed/picsum/200/300">
+    <link rel="icon" href="assets/profile-picture.png">
     <title>Zuzana Žemličková | Portfolio</title>
 </head>
 
 <body>
-    <div class="background-color--primary overflow-stopper">
-        <header class="flex section-width"">
+    <header class="background-color--primary overflow-stopper"">
+        <div class="flex section-width">
             <div class="half display-contents">
                 <p>Hello, I am</p>
                 <h1>Bc. Zuzana Žemličková</h1>
                 <span class="big-text coloured-text thick-text">Computer science graduate</span>
                 <p>Welcome to my personal website! Here I showcase some of my projects and interests. Be welcome to take a look :)</p>
                 <div>
-                    <a href="https://github.com/ZuZanaZZ"><img src="assets/github-logo.svg" alt="github logo" class="icon small-img"></a>
-                    <a href="https://www.linkedin.com/in/zuzana-žemličková/"><img src="assets/linkedin-logo.svg" alt="linkedin logo" class="icon small-img"></a>
+                    <a href="https://github.com/ZuZanaZZ">
+                        <img src="assets/github-logo.svg" alt="github logo" class="icon small-img"></a>
+                    <a href="https://www.linkedin.com/in/zuzana-žemličková/">
+                        <img src="assets/linkedin-logo.svg" alt="linkedin logo" class="icon small-img"></a>
                 </div>
             </div>
-            <div class="big-circle flex-reverse half display-none"><img src="assets/myAvatar.svg" alt="profile picture" class="upper--part__picture"></div>
-        </header>
-    </div>
-    
-    <main>
-        <div class="background-color--secondary">
-            <div class="section-width">
-                <section class="about-me">
-                        <figure class="vertical-align">
-                            <img src="assets/myAvatar.svg" alt="profile picture" class="about-me-picture avatar-circle">
-                            <figcaption class="vertical-align">
-                                <span class="padded-text text-center thick-text big-text">Bc. Zuzana Žemličková</span>
-                                <span class="padded-text text-center">Computer science graduate</span>
-                            </figcaption>
-                        </figure>
-                    <article>
-                        <h2 class="title">About me</h2>
-                        <p class="padded-text-horizontal">Recently graduated with a Bachelor of Computer Science, where I found interest in both the theoretical aspects of this field, like learning about automata, and the practical part of making the theory come to life through coding, which I did by developing a game around automata in Python for my thesis.</p>
-                        <h3 class="list-title">I have experience with:</h3>
-                            <ul>
-                                <li>Languages: Python, C#, C, SQL, Common Lisp, Assembly, HTML, CSS.</li>
-                                <li>Technologies: .NET, Pygame, PostgreSQL.</li>
-                            </ul></p>
-                        <p class="padded-text-horizontal">When my creativity isn't applied to Computer Science, I spend my creativity on various crafts and arts in my spare time, such as painting, knitting, crocheting, cooking/baking & music. Other hobbies include social activities, working out & caring for my plants.</p>
-                        <p class="padded-text-horizontal">Throughout my life I've travelled a decent amount, participated in online communities and met people internationally. Making social connections across cultural, ethnic, international, religious and other kind of differences has taught me a lot, and I hope I can continue this journey, to get to know more people, and expand my interpersonal skills further!</p>
-                        <p class="padded-text-horizontal">Born in Slovakia, studied in Czech Republic and am now aiming for settling down in Denmark, where I've made several friends and found a partner.</p>
-                    </article>
-                </section>
+            <div class="big-circle flex-reverse half display-none">
+                <img src="assets/profile-picture.png" alt="profile picture" class="upper--part__picture">
             </div>
         </div>
+    </header>
+    
+    <main>
+        <section class="background-color--secondary">
+            <div class="about-me section-width">
+                <figure class="vertical-align">
+                    <img src="assets/profile-picture.png" alt="profile picture" class="about-me-picture avatar-circle">
+                    <figcaption class="vertical-align">
+                        <span class="padded-text text-center thick-text big-text">Bc. Zuzana Žemličková</span>
+                        <span class="padded-text text-center">Computer science graduate</span>
+                    </figcaption>
+                </figure>
+                <article>
+                    <h2 class="title">About me</h2>
+                    <p class="padded-text-horizontal">Recently graduated with a Bachelor of Computer Science, where I found interest in both the theoretical aspects of this field, like learning about automata, and the practical part of making the theory come to life through coding, which I did by developing a game around automata in Python for my thesis.</p>
+                    <h3 class="list-title">I have experience with:</h3>
+                        <ul>
+                            <li>Languages: Python, C#, C, SQL, Common Lisp, Assembly, HTML, CSS.</li>
+                            <li>Technologies: .NET, Pygame, PostgreSQL.</li>
+                        </ul></p>
+                    <p class="padded-text-horizontal">When my creativity isn't applied to Computer Science, I spend my creativity on various crafts and arts in my spare time, such as painting, knitting, crocheting, cooking/baking & music. Other hobbies include social activities, working out & caring for my plants.</p>
+                    <p class="padded-text-horizontal">Throughout my life I've travelled a decent amount, participated in online communities and met people internationally. Making social connections across cultural, ethnic, international, religious and other kind of differences has taught me a lot, and I hope I can continue this journey, to get to know more people, and expand my interpersonal skills further!</p>
+                    <p class="padded-text-horizontal">Born in Slovakia, studied in Czech Republic and am now aiming for settling down in Denmark, where I've made several friends and found a partner.</p>
+                </article>
+            </div>
+        </section>
         
         <section class="section-width">
-            <!-- tuto to vycentruj, a urob to klikacie, nech to ludi hodi na inu stranku, a potom o tom povies viac -->
             <h2 class="grid__title title">My Portfolio</h2>
                 <div class="grid">
                     <article class="grid-card background-color--secondary">
                         <img class="grid-card--img" src="assets/Automatontron.png" alt="Automatontron-gameplay-example">
+                        </a>
                         <h3 class="grid-card__title">Automatontron</h3>
                             <p class="grid-card__text">Automatontron is a logic game inspired by the Human Resource Machine game. 
-                                In Automatontron, the player is tasked with constructing an automaton, that recognises the language of the given level, and this progressing in the game.</p>
+                                In Automatontron, the player is tasked with constructing an automaton, that recognises the language of the given level, and this progressing in the game.
+                            </p>
+                        <a href="automatontron.html" class="grid-card--link"></a>
                     </article>
                     <article class="grid-card background-color--secondary">
                         <img class="grid-card--img" src="https://picsum.photos/id/206/640/360" alt="placeholder">
@@ -110,67 +114,45 @@
                         </div>
                     </article>
                 </div>
-                <section>
-                    <h2 class="flex-title title">Hobbies</h2>
-                        <div class="flex">
-                            <article class="flex-card background-color--secondary overflow-stopper card-circle">
-                                <img src="assets/knitting.svg" alt="pencil picture" class="hobbies-picture">
-                                <h3 class="flex-card__title">Knitting</h3>
-                                    <p class="flex-card__text">In my free time I knit various projects ranging from sweathers to socks. I enjoy colourful yarn and warm cup of coffee while knitting!</p>
-                            </article>
-                            <article class="flex-card background-color--secondary overflow-stopper card-circle">
-                                <img src="assets/baking.svg" alt="pc monitor picture" class="hobbies-picture">
-                                <h3 class="flex-card__title">Baking</h3>
-                                    <p class="flex-card__text">I like baking fresh sourdough bread! I keep my own sourdough starter and feed it diligently. Making something so tasty from such simple ingredients fills me with joy!</p>
-                            </article>
-                            <article class="flex-card background-color--secondary overflow-stopper card-circle">
-                                <img src="assets/painting.svg" alt="bullseye picture" class="hobbies-picture">
-                                <h3 class="flex-card__title">Painting</h3>
-                                    <p class="flex-card__text">Drawing and painting are also my passions. I have found great joy in creating paintings with watercolor! I particularly like drawing fantasy landscapes and succulents.</p>
-                            </article>
-                        </div>
-                </section>
         </section>
 
-    </main>
-
-    <div class="background-color--secondary">
         <section class="section-width">
-            <h2 class="title circle">Contact</h2>
+            <h2 class="flex-title title">Hobbies</h2>
                 <div class="flex">
-                    <div class="half display-contents">
-                        <h3>Get in touch!</h3>
-                            <p>If you'd like to contact me, you can do it here:</p>
-                            <div class="flex--no-padding">
-                                <img src="assets/envelope-regular.svg" alt="envelope picture" class="small-img">
-                                <address class="padded-text-vertical thick-text">zuzanazemlicka@gmail.com</address>
-                            </div>
-                            <div class="flex--no-padding">
-                                <img src="assets/mobile-alt-solid.svg" alt="mobile picture" class="small-img">
-                                <address class="padded-text-vertical thick-text">+45 93 87 98 65</address>
-                            </div>
-                    </div>
-                    <div class="half display-contents">        
-                        <h3>Send me a mesage!</h3>
-                            <form class="form">
-                                <div class="form__input grid-card-form full-name test">
-                                    <input type="text" id="full-name" placeholder="Full name">
-                                </div>
-                                <div class="form__input grid-card-form email-address">
-                                    <input type="email" id="email-address" required placeholder="Email-address">
-                                </div>
-                                <div class="form__input grid-card-form subject">
-                                    <input type="text" id="subject" placeholder="Subject">
-                                </div>
-                                <div class="form__input grid-card-form comment">
-                                    <textarea id="comment" required placeholder="Type comment"></textarea>
-                                </div>
-                                <button class="grid-card-form button">Send Message</button>
-                            </form>
-                    </div>
+                    <article class="flex-card background-color--secondary overflow-stopper card-circle">
+                        <img src="assets/knitting.svg" alt="pencil picture" class="hobbies-picture">
+                        <h3 class="flex-card__title">Knitting</h3>
+                            <p class="flex-card__text">In my free time I knit various projects ranging from sweathers to socks. I enjoy colourful yarn and warm cup of coffee while knitting!</p>
+                    </article>
+                    <article class="flex-card background-color--secondary overflow-stopper card-circle">
+                        <img src="assets/baking.svg" alt="pc monitor picture" class="hobbies-picture">
+                        <h3 class="flex-card__title">Baking</h3>
+                            <p class="flex-card__text">I like baking fresh sourdough bread! I keep my own sourdough starter and feed it diligently. Making something so tasty from such simple ingredients fills me with joy!</p>
+                    </article>
+                    <article class="flex-card background-color--secondary overflow-stopper card-circle">
+                        <img src="assets/painting.svg" alt="bullseye picture" class="hobbies-picture">
+                        <h3 class="flex-card__title">Painting</h3>
+                            <p class="flex-card__text">Drawing and painting are also my passions. I have found great joy in creating paintings with watercolor! I particularly like drawing fantasy landscapes and succulents.</p>
+                    </article>
                 </div>
         </section>
-    </div>
+
+        <section class="background-color--secondary">
+            <div class="section-width">
+                <h2 class="title circle">Contact</h2>
+                    <div class="flex">
+                        <div class="flex--no-padding">
+                            <img src="assets/envelope-regular.svg" alt="envelope picture" class="small-img">
+                            <address class="padded-text-vertical thick-text">zuzanazemlicka@gmail.com</address>
+                        </div>
+                        <div class="flex--no-padding">
+                            <img src="assets/mobile-alt-solid.svg" alt="mobile picture" class="small-img">
+                            <address class="padded-text-vertical thick-text">+45 93 87 98 65</address>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>    
 
     <footer class="section-width footer">
         <div class="flex">
