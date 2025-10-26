@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/profile-picture.png">
-    <title>Zuzana Žemličková | Portfolio</title>
-</head>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="assets/profile-picture.png">
+        <title>Zuzana Žemličková | Portfolio</title>
+    </head>
 
-<body>
-    <header class="background-color--primary overflow-stopper"">
-        <div class="flex section-width">
-            <div class="half display-contents">
-                <h2 class="title">Automatontron</h2>
-                <span class="coloured-text thick-text padded-text-horizontal">Logic game made in Python</span>
-                <p class="padded-text-horizontal">
-                    Automatontron is a logic game inspired by the Human Resource Machine game.
-                    In Automatontron, the player is tasked with constructing an automaton that recognises the language of the given level and thus progresses in the game.
-                    It can be found on my GitHub.
-                </p>
+    <body>
+        <header class="background-color--primary overflow-stopper">
+            <div class="flex section-width">
+                <div class="half display-contents">
+                    <h2 class="title">Automatontron</h2>
+                    <span class="coloured-text thick-text padded-text-horizontal">Logic game made in Python</span>
+                    <p class="padded-text-horizontal">
+                        Automatontron is a logic game inspired by the Human Resource Machine game.
+                        In Automatontron, the player is tasked with constructing an automaton that recognises the language of the given level and thus progresses in the game.
+                        It can be found on my GitHub.
+                    </p>
+                </div>
+                <div class="big-circle flex-reverse half display-none"></div>
             </div>
-            <div class="big-circle flex-reverse half display-none"></div>
-        </div>
-    </header>
-    
-    <main>
-        <section class="background-color--secondary">
+        </header>
+        
+        <main class="background-color--secondary">
             <div class="flex flex-vertical section-width">
                 <section>
                     <h2 class="title">Menu</h2>
@@ -43,7 +42,7 @@
                         The player can choose from the options for the levels, resolution, audio menus.
                         There is also an option to "quit game".
                     </p>
-                    <img class="big-img" width="630" height="350.4" alt="main_menu" src="https://github.com/user-attachments/assets/b65c90eb-6d3a-4ad8-a520-bda24b0bdaa8" />
+                    <img class="big-img" width="630" height="350" alt="main menu" src="https://github.com/user-attachments/assets/b65c90eb-6d3a-4ad8-a520-bda24b0bdaa8">
                 </section>
 
                 <section>
@@ -60,7 +59,7 @@
                         The goal of the game is to gradually complete all levels up to the last one and become the master of automata.
                         In the last level of each section, the player is tasked with implementing all the concepts learned so far into one larger automaton.
                     </p>
-                    <img class="big-img" width="324" height="284.4" alt="level_menu" src="https://github.com/user-attachments/assets/a8603bd5-a459-4b0f-9c3d-001dcdd90d34" />
+                    <img class="big-img" width="324" height="284" alt="levelmenu" src="https://github.com/user-attachments/assets/a8603bd5-a459-4b0f-9c3d-001dcdd90d34">
                 </section>
 
                 <section>
@@ -76,91 +75,89 @@
                     <p class="padded-text-horizontal">
                         There is also a bug with Pygame, that sometimes, when entering fullscreen mode, it readjusts the size of the other fullscreen windows.
                     </p>
-                    <img class="medium-img" width="105.5" height="98" alt="resolution_menu" src="https://github.com/user-attachments/assets/3fe85951-23c7-49e2-8749-19048ec884c5" />
+                    <img class="medium-img" width="105" height="98" alt="resolution menu" src="https://github.com/user-attachments/assets/3fe85951-23c7-49e2-8749-19048ec884c5">
                 </section>
 
                 <section>
-                    <section>
-                    <h2 class="title">Audio menu</h2>
-                        <p class="padded-text-horizontal">
-                            The audio menu provides options to enable or disable music and sound effects as seen on the picture.
-                        </p>
-                        <img class="medium-img" width="158.4" height="122.4" alt="audio_menu" src="https://github.com/user-attachments/assets/a6e8507d-42c2-4879-9f93-eb2a4fb6dbd8" />
-                    </section>
+                <h2 class="title">Audio menu</h2>
+                    <p class="padded-text-horizontal">
+                        The audio menu provides options to enable or disable music and sound effects as seen on the picture.
+                    </p>
+                    <img class="medium-img" width="158" height="122" alt="audio menu" src="https://github.com/user-attachments/assets/a6e8507d-42c2-4879-9f93-eb2a4fb6dbd8">
+                </section>
 
-                    <section>
-                        <h3 class="title">User interface</h3>
-                        <p class="padded-text-horizontal">
-                            The levels take place on a playing surface that contains user interface elements, which are depicted on the picture below. 
-                            Their detailed description is as follows:
-                        </p>    
-                        <p class="padded-text-horizontal">
-                            Playing surface: The background on which the game takes place.
-                        </p>
-                        <p class="padded-text-horizontal">
-                            Helper with a text bubble: A character that accompanies the player during level solving. 
-                            It provides useful hints, informs the player about the correctness of their machine and warns about possible errors.
-                        </p>
-                        <p class="padded-text-horizontal"> 
-                            Player character: The player controls this character and interacts with the game environment.
-                            The character has animations of movement to the right, to the left, and standing still.
-                        </p>
-                        <p class="padded-text-horizontal">
-                            Circle generator: When the player stands on the generator, one circle appears.
-                        </p>
-                        <p class="padded-text-horizontal">
-                            Button: After pressing the button, the process of checking the player's automaton is started.
-                            The helper then announces whether the player's automaton is correct or incorrect.
-                        </p>
-                        <p class="padded-text-horizontal">
-                            Circle Remover: When the player steps on the circle remover, the circle they are holding is removed.
-                        </p>
-                        <img class="big-img" width="630" height="350.4" alt="level_ui_elements" src="https://github.com/user-attachments/assets/acd5feea-2a11-461f-99c6-4a9cf1b083bf" />
-                    </section>
+                <section>
+                    <h3 class="title">User interface</h3>
+                    <p class="padded-text-horizontal">
+                        The levels take place on a playing surface that contains user interface elements, which are depicted on the picture below. 
+                        Their detailed description is as follows:
+                    </p>    
+                    <p class="padded-text-horizontal">
+                        Playing surface: The background on which the game takes place.
+                    </p>
+                    <p class="padded-text-horizontal">
+                        Helper with a text bubble: A character that accompanies the player during level solving. 
+                        It provides useful hints, informs the player about the correctness of their machine and warns about possible errors.
+                    </p>
+                    <p class="padded-text-horizontal"> 
+                        Player character: The player controls this character and interacts with the game environment.
+                        The character has animations of movement to the right, to the left, and standing still.
+                    </p>
+                    <p class="padded-text-horizontal">
+                        Circle generator: When the player stands on the generator, one circle appears.
+                    </p>
+                    <p class="padded-text-horizontal">
+                        Button: After pressing the button, the process of checking the player's automaton is started.
+                        The helper then announces whether the player's automaton is correct or incorrect.
+                    </p>
+                    <p class="padded-text-horizontal">
+                        Circle Remover: When the player steps on the circle remover, the circle they are holding is removed.
+                    </p>
+                    <img class="big-img" width="630" height="350" alt="level ui elements" src="https://github.com/user-attachments/assets/acd5feea-2a11-461f-99c6-4a9cf1b083bf">
+                </section>
 
-                    <section>
-                        <h3 class="title">Circles, arrows, and adding symbols</h3>
-                        <p class="padded-text-horizontal">
-                            When standing on the circle and pressing the "s" key, the circle variant is changed.
-                            It cycles between "normal", "accepting", "initial" and "initial-accepting" variants.
-                            The appearance of the circles can be seen in the figure below.
-                        </p>
-                        <p class="padded-text-horizontal">    
-                            The key "a" controls the drawing of both arrow variants.
-                            To draw a straight arrow, the player must stand on the circle and press the "a" key.
-                            After moving to the target circle, it is necessary to press the "a" key twice.
-                            To create a loop, i.e., an arrow starting and ending in the same state, it is necessary to press the "a" key twice on one circle.
-                            The picture below shows the appearance of the arrow variants.
-                        </p>
-                        <p class="padded-text-horizontal">
-                            To remove the arrow, the "d" key can be pressed.
-                            It removes the arrow the player character is standing on.
-                        </p>
-                        <p class="padded-text-horizontal">
-                            The keys "z", "x", "c", and "v" add a symbol to the arrow the player is standing on, which can be seen on the figure below.
-                        </p>
-                        <img class="medium-img" width="184" height="148" alt="arrow_variants_with_symbols" src="https://github.com/user-attachments/assets/fa39e5cf-8e30-4efc-8853-f22c8b62e9ea" />
-                        <img class="medium-img" width="363" height="81.95" alt="circle_variants" src="https://github.com/user-attachments/assets/673fd311-aaef-4da0-a977-7830c3e9a277" />
-                    </section>
+                <section>
+                    <h3 class="title">Circles, arrows, and adding symbols</h3>
+                    <p class="padded-text-horizontal">
+                        When standing on the circle and pressing the "s" key, the circle variant is changed.
+                        It cycles between "normal", "accepting", "initial" and "initial-accepting" variants.
+                        The appearance of the circles can be seen in the figure below.
+                    </p>
+                    <p class="padded-text-horizontal">    
+                        The key "a" controls the drawing of both arrow variants.
+                        To draw a straight arrow, the player must stand on the circle and press the "a" key.
+                        After moving to the target circle, it is necessary to press the "a" key twice.
+                        To create a loop, i.e., an arrow starting and ending in the same state, it is necessary to press the "a" key twice on one circle.
+                        The picture below shows the appearance of the arrow variants.
+                    </p>
+                    <p class="padded-text-horizontal">
+                        To remove the arrow, the "d" key can be pressed.
+                        It removes the arrow the player character is standing on.
+                    </p>
+                    <p class="padded-text-horizontal">
+                        The keys "z", "x", "c", and "v" add a symbol to the arrow the player is standing on, which can be seen on the figure below.
+                    </p>
+                    <img class="medium-img" width="184" height="148" alt="arrow variants_with_symbols" src="https://github.com/user-attachments/assets/fa39e5cf-8e30-4efc-8853-f22c8b62e9ea">
+                    <img class="medium-img" width="363" height="81" alt="circle variants" src="https://github.com/user-attachments/assets/673fd311-aaef-4da0-a977-7830c3e9a277">
+                </section>
 
-                    <section>
-                        <h3 class="title">Automaton responses</h3>
-                        <p class="padded-text-horizontal">
-                            During the levels, the player can receive useful tips from the assistant regarding new concepts in the level.
-                            The assistant also informs the player whether their automaton accepts the language of the level or if the automaton has a problem and needs to be fixed.
-                            For example, it lists the string that differs between the language of the player's automaton and the language of the level, as can be seen below.
-                        </p>
-                        <img class="big-img" width="472.5" height="184.5" alt="automaton_doesnt_accept" src="https://github.com/user-attachments/assets/22141ee1-a212-48a2-9120-f1b94e2aa5cf" />
-                        <img class="big-img" width="492.94" height="188.65" alt="automaton_accepts" src="https://github.com/user-attachments/assets/dd8e614f-a5b0-4592-9f61-d876ed53e3f3" />
-                    </section>
+                <section>
+                    <h3 class="title">Automaton responses</h3>
+                    <p class="padded-text-horizontal">
+                        During the levels, the player can receive useful tips from the assistant regarding new concepts in the level.
+                        The assistant also informs the player whether their automaton accepts the language of the level or if the automaton has a problem and needs to be fixed.
+                        For example, it lists the string that differs between the language of the player's automaton and the language of the level, as can be seen below.
+                    </p>
+                    <img class="big-img" width="472" height="184" alt="automaton doesnt accept" src="https://github.com/user-attachments/assets/22141ee1-a212-48a2-9120-f1b94e2aa5cf">
+                    <img class="big-img" width="492" height="188" alt="automaton accepts" src="https://github.com/user-attachments/assets/dd8e614f-a5b0-4592-9f61-d876ed53e3f3">
+                </section>
 
-                    <section>
-                        <h3 class="title">Game completion</h3>
-                        <p class="padded-text-horizontal">
-                            Upon completing the game, the player becomes a master of automata!
-                        </p>
-                        <img class="big-img" width="630" height="350.4" alt="game_completion" src="https://github.com/user-attachments/assets/e16edf3c-73ae-49b2-816d-786229386488" />
-                    </section>
+                <section>
+                    <h3 class="title">Game completion</h3>
+                    <p class="padded-text-horizontal">
+                        Upon completing the game, the player becomes a master of automata!
+                    </p>
+                    <img class="big-img" width="630" height="350" alt="game completion" src="https://github.com/user-attachments/assets/e16edf3c-73ae-49b2-816d-786229386488">
                 </section>
 
                 <section>
@@ -169,18 +166,18 @@
                         Below is a UML diagram showing the class structure of the game’s code.
                     </p>
                     <h3 class="title">Class diagram</h3>
-                    <img class="big-img" width="726.68" height="298.22" alt="class_diagram" src="https://github.com/user-attachments/assets/81d8e8b9-918a-4c71-9f01-73d763cd41a0" />
+                    <img class="big-img" width="726" height="298" alt="class diagram" src="https://github.com/user-attachments/assets/81d8e8b9-918a-4c71-9f01-73d763cd41a0">
                 </section>
             </div>
-        </section>
-        
-    <footer class="section-width footer">
-        <div class="flex">
-            <div>
-                <a href="https://github.com/ZuZanaZZ"><img src="assets/github-logo.svg" alt="github logo" class="icon small-img"></a>
-                <a href="https://www.linkedin.com/in/zuzana-žemličková/"><img src="assets/linkedin-logo.svg" alt="linkedin logo" class="icon small-img"></a>
+        </main>
+            
+        <footer class="section-width footer">
+            <div class="flex">
+                <div>
+                    <a href="https://github.com/ZuZanaZZ"><img src="assets/github-logo.svg" alt="github logo" class="icon small-img"></a>
+                    <a href="https://www.linkedin.com/in/zuzana-žemličková/"><img src="assets/linkedin-logo.svg" alt="linkedin logo" class="icon small-img"></a>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
