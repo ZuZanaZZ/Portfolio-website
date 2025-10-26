@@ -306,12 +306,9 @@ address{
 }
 
 /*footer*/
-.footer__text{
-    text-align: right;
-}
-
-.push{
-    margin-left: auto;
+.flex-horizontal{
+    display: flex;
+    padding: 1em;
 }
 
 /*breakpoints: 1200, 960, 560, 360*/
@@ -343,6 +340,10 @@ address{
 @media(max-width: 959px){
     .flex{
         flex-direction: column; 
+    }
+
+    .flex-horizontal{
+        justify-content: center;
     }
 
     .box-width-auto{
