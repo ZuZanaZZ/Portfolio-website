@@ -35,10 +35,10 @@
         
         <main>
             <section class="background-color--secondary">
-                <div class="about-me section-width">
-                    <figure class="vertical-align">
+                <div class="about-me flex--no-padding section-width">
+                    <figure class="vertical-align flex--no-padding">
                         <img class="about-me-picture avatar-circle" alt="profile picture" src="assets/profile-picture.webp">
-                        <figcaption class="vertical-align">
+                        <figcaption class="vertical-align flex--no-padding">
                             <h2 class="text-center">Bc. Zuzana Žemličková</h2>
                             <span class="text-center">Computer science graduate</span>
                         </figcaption>
@@ -68,7 +68,12 @@
                 <h2 class="grid__title title">My Portfolio</h2>
                     <div class="grid">
                         <article class="grid-card background-color--secondary">
-                            <img class="grid-card--img" alt="Automatontron-gameplay-example" src="assets/game_completion.webp">
+                            <img class="big-img" width="630" height="350" alt="Automaton example" 
+                                srcset="assets/game_completion.webp 1271w,
+                                        assets/game_completion-small.webp 1000w"
+                                sizes="(width <= 999px) 1000px,
+                                    1271px"
+                                src="assets/game_completion.png">
                             <h3 class="grid-card__title">Automatontron</h3>
                                 <p class="grid-card__text">
                                     Automatontron is a logic game inspired by the Human Resource Machine game. 

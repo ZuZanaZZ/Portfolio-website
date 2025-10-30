@@ -30,12 +30,7 @@ body, textarea{
     padding: 0;
 }
 
-.big-img{
-    border-radius: 1em;
-    margin-left: 3em;
-}
-
-.medium-img{
+.big-img, .medium-img{
     border-radius: 1em;
     margin-left: 3em;
 }
@@ -204,16 +199,15 @@ li{
 
 /*about me*/
 .about-me{
-    display: flex;
     z-index: 1;
 }
+
 .about-me-picture{
     width: 10em;
     justify-self: center;
 }
 
 .vertical-align{
-    display: flex;
     align-items: center;
     flex-direction: column;
 }
@@ -377,13 +371,8 @@ address{
     }
 
     .big-img{
-        width: 80%;
-        height: 80%;
-    }
-
-    .medium-img{
-        width: 40%;
-        height: 40%;
+        width: 60%;
+        height: 60%;
     }
 }
 
@@ -414,5 +403,10 @@ address{
         flex-direction: column;
         margin: auto;
         text-align: center;
+    }
+
+    .medium-img{
+        width: 40%;
+        height: 40%;
     }
 }
