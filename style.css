@@ -1,5 +1,5 @@
 /*colors*/
-:root {
+:root{
     --background-color--primary: #f6f5f6;
     --background-color--secondary: white;
     --accent-color--primary: #ffb4e5;
@@ -9,7 +9,7 @@
 }
 
 /*site*/
-.background-color--primary {
+.background-color--primary{
     background-color: var(--background-color--secondary);
 }
 
@@ -32,6 +32,10 @@ body, textarea{
     font-weight: 400;
     margin: 0;
     padding: 0;
+}
+
+a{
+    text-decoration: none;
 }
 
 .big-img{
