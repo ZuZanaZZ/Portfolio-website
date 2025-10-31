@@ -17,6 +17,10 @@
     background-color: var(--background-color--primary);
 } 
 
+.accent-color--primary{
+    background-color: var(--accent-color--primary);
+}
+
 .section-width{
     max-width: 1140px;
     margin: auto;
@@ -61,6 +65,10 @@ h1{
 
 .padded-text-horizontal{
     padding: 0 2em;
+}
+
+.padded-text-right{
+    padding-right: 0.5em;
 }
 
 .big-text{
@@ -166,6 +174,7 @@ li{
     border-radius: 50%;
 }
 
+
 /*icons*/
 .icon:hover{
     background-color: var(--accent-color--secondary);
@@ -177,6 +186,15 @@ li{
     background-color: var(--accent-color--primary);
     transition: background-color 0.2s;
     border-radius: 50%;
+}
+
+/*navbar*/
+.nav-link:hover{
+    color: black;
+}
+
+.nav-link:active{
+    color: var(--text-color--text);
 }
 
 /*upper part*/  
