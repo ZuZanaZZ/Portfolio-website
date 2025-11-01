@@ -40,10 +40,6 @@ body, textarea{
     padding: 0;
 }
 
-a{
-    text-decoration: none;
-}
-
 .big-img, .medium-img{
     border-radius: 1em;
     margin-left: 3em;
@@ -196,11 +192,11 @@ li{
 }
 
 /*navbar*/
-.nav-link:hover{
+.link:hover{
     color: black;
 }
 
-.nav-link:active{
+.link:active{
     color: var(--text-color--text);
 }
 
