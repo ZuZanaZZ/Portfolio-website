@@ -11,6 +11,7 @@
 /*font*/
 @font-face {
     font-family: "Roboto";
+    font-display: swap;
     src: url(assets/Roboto-VariableFont_wdth\,wght.ttf);
 }
 
