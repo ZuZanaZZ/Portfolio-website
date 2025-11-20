@@ -193,12 +193,18 @@ li{
 }
 
 /*navbar*/
+.link{
+    text-decoration: none;
+}
+
 .link:hover{
-    color: black;
+    color: var(--text-color--text);
+    text-decoration: underline;
 }
 
 .link:active{
-    color: var(--text-color--text);
+    color: black;
+    text-decoration: underline;
 }
 
 /*upper part*/  
