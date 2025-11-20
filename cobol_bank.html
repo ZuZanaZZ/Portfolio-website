@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio website created to showcase my projects.">
+        <link rel="icon" href="assets/profile-picture.webp">
+        <title>Zuzana Žemličková | Portfolio</title>
+    </head>
+
+    <body>
+        <header class="accent-color--primary section">
+            <div class="justify-left section-width">
+                <a href="index.html" class="link big-text padded-text-right thick-text">Home</a>
+                <a href="Zuzana_Žemličková_Résumé.pdf" class="link big-text padded-text-right thick-text">Résumé</a>
+            </div>
+        </header>
+        
+        <main class="background-color--secondary">
+            <section class="background-color--primary overflow-stopper">
+                <div class="flex section-width">
+                    <div class="half display-contents">
+                        <h2 class="title">Simple COBOL bank</h2>
+                        <span class="coloured-text thick-text padded-text-horizontal">Simple bank simulation written in COBOL.</span>
+                        <p class="padded-text-horizontal">
+                            I have developed an interest in COBOL. 
+                            I created a small simulation of a bank to practice the language.
+                            The project includes interaction between client and bank.
+                            The source code can be found on my
+                                <a class="link" href="https://github.com/ZuZanaZZ/Simple-COBOL-bank">GitHub
+                            </a>
+                        </p>
+                    </div>
+                    <div class="big-circle flex-reverse half display-none">
+                        <img class="upper--part__picture" alt="COBOL example" src="assets/COBOL_example.webp">
+                    </div>
+                </div>
+            </section>
+            
+            <div class="flex flex-vertical section-width">
+                <section>
+                    <h2 class="title">Functionality</h2>
+                    <p class="padded-text-horizontal">
+                        System will ask you which client you'd like to appear as.
+                    </p>
+                    <img class="big-img" alt="select client" src="assets/select_client.webp">
+                    <p class="padded-text-horizontal">
+                        After selecting a client, their information is displayed.
+                        You'll be asked how much you'd like to transfer to the bank.
+                    </p>
+                    <img class="big-img" alt="select transfer amount" src="assets/select_transfer_amount.webp">
+                </section>
+
+                <section>
+                    <h2 class="title">Transaction authorisation</h2>
+                    <p class="padded-text-horizontal">
+                        Upon entering the transaction amount the system will check whether the account has sufficient funds.
+                    </p>
+                    <p class="padded-text-horizontal">
+                        If the funds are available, the transaction will take place.
+                    </p>
+                    <img class="big-img" alt="sufficient funds" src="assets/sufficient_funds.webp">
+                    <p class="padded-text-horizontal">
+                        If not, the transaction is denied.
+                    </p>
+                    <img class="big-img" alt="insufficient funds" src="assets/insufficient_funds.webp">
+                </section>
+            </div>
+        </main>
+            
+        <footer class="section-width footer">
+            <div class="flex">
+                <div>
+                    <a href="https://github.com/ZuZanaZZ">
+                        <img class="icon small-img" alt="github logo" src="assets/github-logo.svg"></a>
+                    <a href="https://www.linkedin.com/in/zuzana-žemličková/">
+                        <img class="icon small-img" alt="linkedin logo" src="assets/linkedin-logo.svg"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
