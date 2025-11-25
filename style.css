@@ -194,17 +194,15 @@ li{
 
 /*navbar*/
 .link{
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .link:hover{
-    color: var(--text-color--text);
-    text-decoration: underline;
+    color: black;
 }
 
 .link:active{
-    color: black;
-    text-decoration: underline;
+    color: var(--text-color--text);
 }
 
 /*upper part*/  
