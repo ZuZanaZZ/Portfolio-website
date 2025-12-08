@@ -12,7 +12,7 @@
 @font-face {
     font-family: "Roboto";
     font-display: swap;
-    src: url(assets/Roboto-VariableFont_wdth\,wght.ttf);
+    src: url(assets/other/Roboto-VariableFont_wdth\,wght.ttf);
 }
 
 /*site*/
@@ -97,8 +97,7 @@ ul{
 }
 
 li{
-    list-style: none;
-    padding-left: 2em;
+    margin-left: 1em;
 }
 
 .list-title{
