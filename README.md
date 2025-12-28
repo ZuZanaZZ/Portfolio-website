@@ -10,19 +10,19 @@ This website is for displaying my projects
 ## Upper section
 - Here is a brief introduction of who I am, along with a hand drawn picture of me. It also contains links to my GitHub and LinkedIn.
 
-<img width="1385" height="568" alt="image" src="https://github.com/user-attachments/assets/a875c45a-509e-42ed-88d8-7a76445a3127" />
+<img width="1384" height="501" alt="image" src="https://github.com/user-attachments/assets/037d6894-a3b2-4256-8afa-52698e554766" />
 
 ## About me
 - Further introduction of who I am and what languages and technologies i have experience with.
 
-<img width="1426" height="494" alt="image" src="https://github.com/user-attachments/assets/30454ade-9753-4ca5-b978-840b6990beed" />
+<img width="1405" height="496" alt="image" src="https://github.com/user-attachments/assets/692a5a17-55be-4980-a27d-29437fe645a3" />
 
 ## My portfolio
 - In this section, there are cards with the projects I am currently working on.
 - The Automatontron card is clickable and leads to a page with further information.
 - The other cards will be clickable in future once the projects are finished.
 
-<img width="1437" height="693" alt="image" src="https://github.com/user-attachments/assets/3b41fe81-6c16-4d41-938f-13ce39ab37ab" />
+<img width="1434" height="644" alt="image" src="https://github.com/user-attachments/assets/b27d914b-5c52-446d-845e-6f1ce9b7772d" />
 
 ## Education
 - Explanation of my educational background.
