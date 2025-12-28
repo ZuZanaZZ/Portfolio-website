@@ -1,5 +1,5 @@
 # Portfolio-website
-This website is for displaying my projects
+This website is for displaying my projects and showcasing my hobbies.
 
 # Closer look at the subsections
 ## Header
@@ -19,8 +19,7 @@ This website is for displaying my projects
 
 ## My portfolio
 - In this section, there are cards with the projects I am currently working on.
-- The Automatontron card is clickable and leads to a page with further information.
-- The other cards will be clickable in future once the projects are finished.
+- The cards are clickable and lead to further information about the projects.
 
 <img width="1434" height="644" alt="image" src="https://github.com/user-attachments/assets/b27d914b-5c52-446d-845e-6f1ce9b7772d" />
 
