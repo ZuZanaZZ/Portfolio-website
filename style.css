@@ -1,11 +1,10 @@
 /*colors*/
 :root{
-    --background-color--primary: #f6f5f6;
-    --background-color--secondary: white;
-    --accent-color--primary: #ffb4e5;
-    --accent-color--secondary: #dedbde;
-    --text-color--title: #0b0b15;   
-    --text-color--text: #4e4e4e;
+    --background-color--primary: #F8DDE3;
+    --background-color--secondary: #FFF8EE;
+    --accent-color--primary: #CDEFE8;
+    --accent-color--secondary: #F8DDE3;
+    --text-color: #6F1832;   
 }
 
 /*font*/
@@ -48,7 +47,7 @@ body, textarea{
 
 /*font*/
 p, a, address, span, li{
-    color: var(--text-color--text);
+    color: var(--text-color);
 }
 
 h1{
@@ -58,7 +57,7 @@ h1{
 }
 
 h2, h3{
-    color: var(--text-color--title);
+    color: var(--text-color);
     font-weight: 900;
 }
 
@@ -106,7 +105,7 @@ li{
     font-size: medium;
     padding-left: 2em;
     margin: 0;
-    color: var(--text-color--text);
+    color: var(--text-color);
 }
 
 /*circles*/
@@ -201,7 +200,7 @@ li{
 }
 
 .link:active{
-    color: var(--text-color--text);
+    color: var(--text-color);
 }
 
 /*upper part*/  
