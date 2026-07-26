@@ -150,22 +150,9 @@ li{
 .title{
     position: relative;
     z-index: 1;
-    padding: 1em 1em 0 1em;
+    padding: 1em 1em 0 0;
     margin: 0;
     font-weight: 900;
-}
-
-.title::before{
-    content: "";
-    background-color: var(--accent-color--primary);
-    width: 2em;
-    height: 2em;
-    display: inline-block;
-    position: absolute;
-    z-index: -1;
-    bottom: 0.1em;
-    left: 0.5em;
-    border-radius: 50%;
 }
 
 
@@ -194,6 +181,7 @@ li{
 .link:active{
     color: var(--text-color);
 }
+
 
 /*upper part*/  
 .half {
@@ -328,10 +316,8 @@ address{
 }
 
 /*footer*/
-.justify-left{
-    flex: none;
-    justify-items: left;
-    padding: 1em;
+.push{
+    margin-left: auto;
 }
 
 /*breakpoints: 1200, 960, 560, 360*/
