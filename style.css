@@ -1,9 +1,8 @@
 /*colors*/
 :root{
-    --background-color--primary: #F8DDE3;
-    --background-color--secondary: #FFF8EE;
-    --accent-color--primary: #CDEFE8;
-    --accent-color--secondary: #F8DDE3;
+    --background-color--primary: #FFF8EE;
+    --accent-color--primary: #F8DDE3;
+    --accent-color--secondary: #CDEFE8;
     --text-color: #6F1832;   
 }
 
@@ -16,12 +15,8 @@
 
 /*site*/
 .background-color--primary{
-    background-color: var(--background-color--secondary);
-}
-
-.background-color--secondary{
     background-color: var(--background-color--primary);
-} 
+}
 
 .accent-color--primary{
     background-color: var(--accent-color--primary);
@@ -51,6 +46,7 @@ p, a, address, span, li{
 }
 
 h1{
+    color: var(--text-color);
     font-size: 4em;
     margin: 0;
     font-weight: 900;
@@ -75,10 +71,6 @@ h2, h3{
 
 .big-text{
     font-size: 2em;
-}
-
-.small-text{
-    font-size: 0.9em;
 }
 
 .thick-text{
@@ -110,7 +102,7 @@ li{
 
 /*circles*/
 .avatar-circle{
-    background-color: var(--accent-color--primary);
+    background-color: var(--accent-color--secondary);
     border-radius: 50%;
 }
 
@@ -121,7 +113,7 @@ li{
 
 .big-circle::before{
     content: "";
-    background-color: var(--accent-color--primary);
+    background-color: var(--accent-color--secondary);
     width: 80em;
     height: 80em;
     display: inline-block;
@@ -144,7 +136,7 @@ li{
 
 .card-circle::before{
     content: "";
-    background-color: var(--accent-color--primary);
+    background-color: var(--accent-color--secondary);
     width: 11em;
     height: 11em;
     display: inline-block;
