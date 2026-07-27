@@ -1,9 +1,12 @@
 /*colors*/
 :root{
     --background-color--primary: #FFF8EE;
-    --accent-color--primary: #F8DDE3;
+    --ui-background-color: #F8DDE3;
+    --ui-background-color--hover: #F4D2DA;
+    --ui-background-color--active: #EDC4CF;
     --accent-color--secondary: #CDEFE8;
-    --text-color: #6F1832;   
+    --text-color--title: #6F1832;
+    --text-color--text: #474747;
 }
 
 /*font*/
@@ -19,7 +22,7 @@
 }
 
 .accent-color--primary{
-    background-color: var(--accent-color--primary);
+    background-color: var(--ui-background-color);
 }
 
 .section-width{
@@ -42,18 +45,18 @@ body, textarea{
 
 /*font*/
 p, a, address, span, li{
-    color: var(--text-color);
+    color: var(--text-color--text);
 }
 
 h1{
-    color: var(--text-color);
+    color: var(--text-color--title);
     font-size: 4em;
     margin: 0;
     font-weight: 900;
 }
 
 h2, h3{
-    color: var(--text-color);
+    color: var(--text-color--title);
     font-weight: 900;
 }
 
@@ -97,7 +100,7 @@ li{
     font-size: medium;
     padding-left: 2em;
     margin: 0;
-    color: var(--text-color);
+    color: var(--text-color--title);
 }
 
 /*circles*/
@@ -158,13 +161,13 @@ li{
 
 /*icons*/
 .icon:hover{
-    background-color: var(--accent-color--secondary);
+    background-color: var(--ui-background-color--hover);
     transition: background-color 0.2s;
     border-radius: 50%;
 }
 
 .icon:active{
-    background-color: var(--accent-color--primary);
+    background-color: var(--ui-background-color--active);
     transition: background-color 0.2s;
     border-radius: 50%;
 }
@@ -175,11 +178,11 @@ li{
 }
 
 .link:hover{
-    color: black;
+    color: var(--text-color--title);
 }
 
 .link:active{
-    color: var(--text-color);
+    color: black;
 }
 
 
@@ -241,11 +244,11 @@ li{
 }
 
 .grid-card:hover{
-    background-color: var(--accent-color--secondary);
+    background-color: var(--ui-background-color--hover);
 }
 
 .grid-card:active{
-    background-color: var(--accent-color--primary);
+    background-color: var(--ui-background-color--active);
 }
 
 .grid-card--img{
@@ -265,7 +268,7 @@ li{
 
 /*education*/
 .dividing-line{
-    border-right: 1px solid var(--accent-color--primary);
+    border-right: 1px solid var(--ui-background-color);
 }
 
 .divider-width{
