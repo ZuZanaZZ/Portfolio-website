@@ -4,7 +4,7 @@
     --ui-background-color: #F8DDE3;
     --ui-background-color--hover: #F4D2DA;
     --ui-background-color--active: #EDC4CF;
-    --accent-color--secondary: #CDEFE8;
+    --accent-color--primary: #CDEFE8;
     --text-color--title: #6F1832;
     --text-color--text: #474747;
 }
@@ -27,6 +27,7 @@
 
 .section-width{
     max-width: 1140px;
+    padding: 0 0 0 1em;
     margin: auto;
 }
 
@@ -105,7 +106,7 @@ li{
 
 /*circles*/
 .avatar-circle{
-    background-color: var(--accent-color--secondary);
+    background-color: var(--accent-color--primary);
     border-radius: 50%;
 }
 
@@ -116,7 +117,7 @@ li{
 
 .big-circle::before{
     content: "";
-    background-color: var(--accent-color--secondary);
+    background-color: var(--accent-color--primary);
     width: 80em;
     height: 80em;
     display: inline-block;
@@ -139,7 +140,7 @@ li{
 
 .card-circle::before{
     content: "";
-    background-color: var(--accent-color--secondary);
+    background-color: var(--accent-color--primary);
     width: 11em;
     height: 11em;
     display: inline-block;
@@ -153,7 +154,7 @@ li{
 .title{
     position: relative;
     z-index: 1;
-    padding: 1em 1em 0 0;
+    padding: 1em 0 0 0;
     margin: 0;
     font-weight: 900;
 }
@@ -268,7 +269,7 @@ li{
 
 /*education*/
 .dividing-line{
-    border-right: 1px solid var(--ui-background-color);
+    border-right: 1px solid var(--accent-color--primary);
 }
 
 .divider-width{
@@ -352,10 +353,6 @@ address{
 @media(max-width: 959px){
     .flex{
         flex-direction: column; 
-    }
-
-    .flex-horizontal{
-        justify-content: center;
     }
 
     .box-width-auto{
