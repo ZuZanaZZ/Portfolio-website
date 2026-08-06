@@ -159,6 +159,12 @@ li{
     font-weight: 900;
 }
 
+/*header*/
+.header{
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+}
 
 /*icons*/
 .icon:hover{
@@ -324,6 +330,10 @@ address{
     margin-left: auto;
 }
 
+.footer{
+    display: flex;
+}
+
 /*breakpoints: 1200, 960, 560, 360*/
 /*extra big*/
 @media (min-width: 1200px){ 
@@ -380,10 +390,6 @@ address{
         flex-direction: row;
     }
 
-    .footer{
-        flex-direction: row;
-    }
-
     .big-img{
         width: 60%;
         height: 60%;
@@ -407,16 +413,6 @@ address{
     
     .dividing-line{
         display: contents;
-    }
-
-    .push{
-        display: contents;
-    }
-
-    .footer{
-        flex-direction: column;
-        margin: auto;
-        text-align: center;
     }
 
     .medium-img{
