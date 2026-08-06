@@ -2,8 +2,8 @@
 :root{
     --background-color--primary: #FFF8EE;
     --ui-background-color: #F8DDE3;
-    --ui-background-color--hover: #F4D2DA;
-    --ui-background-color--active: #EDC4CF;
+    --ui-background-color--hover: #EDC4CF;
+    --ui-background-color--active: #e8acbc;
     --accent-color--primary: #CDEFE8;
     --text-color--title: #6F1832;
     --text-color--text: #474747;
